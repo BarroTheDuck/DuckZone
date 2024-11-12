@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Zone</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-image: url('duckbg.jpg'); }
+        #container { text-align: center; background-color: burlywood; padding: 20px; }
+        input { padding: 10px; margin: 10px; }
+    </style>
+</head>
+<body>
+   
+    
+    <div id="container">
+        Votre domicile a été visité par les canards cosmiques. Ils portent sous leur duvet les codes vers des espaces de bonheur et de joie. Couack !
+        <h1>Entrez le Duck Code</h1>
+        <input type="text" id="codeInput" placeholder="Entrez votre code">
+        <br>
+        <button onclick="verifierCode()">Accéder au bonheur</button>
+    </div>
+
+    <script>
+        function verifierCode() {
+            const code = document.getElementById('codeInput').value;
+            const medias = {
+                
+                "MU61Z": "MU61Z.gif",
+                "CF4CR": "CF4CR.jpg",
+                "ZYFNG": "ZYFNG.gif",
+                "T9TKN": "T9TKN.jpg",
+                "YJ9QN": "YJ9QN.jpg",
+                "OFUTO": "OFUTO.gif",
+                "3C2Y4": "3C2Y4.gif",
+                "57TNV": "57TNV.gif",
+                "8ZA8Y": "media1.html",
+                "87FDZ": "media2.html",
+                "0IYXJ": "media1.html",
+                "ZYLX3": "media2.html",
+                "EZTB4": "media1.html",
+                "BRUBE": "media2.html",
+                "RCE99": "media1.html",
+                "L9WVL": "media2.html",
+                "C9WE1": "media1.html",
+                "V59R2": "media2.html",
+                "Y6AWR": "media1.html",
+                "J473Z": "media2.html",
+            };
+            
+            if (medias[code]) {
+                window.location.href = medias[code];
+            } else {
+                alert("Code incorrect. Veuillez réessayer.");
+            }
+        }
+    </script>
+</body>
+</html>
