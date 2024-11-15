@@ -14,8 +14,10 @@
    
     
     <div id="container">
-        Votre domicile a été visité par les canards cosmiques. Ils portent sous leur duvet les codes vers des espaces de bonheur et de joie. Couack !
-        <h1>Entrez le Duck Code</h1>
+        Ton domicile a été visité par les canards cosmiques. Ils portent sous leur duvet les codes vers des espaces de bonheur et de joie. Quack !
+        <br>
+        N'hésite pas pas à aider tes canards à voyager vers d'autres horizons pour partager le bonheur !
+        <h1>Entre le Duck Code :</h1>
         <input type="text" id="codeInput" placeholder="Entrez votre code">
         <br>
         <button onclick="verifierCode()">Accéder au bonheur</button>
@@ -26,32 +28,28 @@
             const code = document.getElementById('codeInput').value;
             const medias = {
                 
-                "MU61Z": "MU61Z.gif",
-                "CF4CR": "CF4CR.jpg",
-                "ZYFNG": "ZYFNG.gif",
-                "T9TKN": "T9TKN.jpg",
-                "YJ9QN": "YJ9QN.jpg",
-                "OFUTO": "OFUTO.gif",
-                "3C2Y4": "3C2Y4.gif",
-                "57TNV": "57TNV.gif",
-                "8ZA8Y": "media1.html",
-                "87FDZ": "media2.html",
-                "0IYXJ": "media1.html",
-                "ZYLX3": "media2.html",
-                "EZTB4": "media1.html",
-                "BRUBE": "media2.html",
-                "RCE99": "media1.html",
-                "L9WVL": "media2.html",
-                "C9WE1": "media1.html",
-                "V59R2": "media2.html",
-                "Y6AWR": "media1.html",
-                "J473Z": "media2.html",
+                
+                "YM9": "YM9.gif",
+                "X6W": "X6W.gif",
+                "1QP": "1QP.png",
+                "V66": "V66.gif",
+                "TZI": "TZI.gif",
+                "YM7": "YM7.gif",
+                "Z3S": "Z3S.jpg",
+                "OOU": "OOU.gif",
+                "8M5": "8M5.gif",
+                "6AG": "6AG.jpg",
+                "FK1": "FK1.gif",
+                "JEZ": "JEZ.gif",
+                "BRK": "BRK.gif",
+                "9SU": "9SU.gif",
+                "ZNB": "ZNB.jpg",
             };
             
             if (medias[code]) {
                 window.location.href = medias[code];
             } else {
-                alert("Code incorrect. Veuillez réessayer.");
+                alert("Il y a un Quack ! Code incorrect. Essaye en vérifiant les O et 0, les 5 et S, ... Pas facile d'écrire avec des pattes palmées !");
             }
         }
     </script>
